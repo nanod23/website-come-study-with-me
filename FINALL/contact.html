@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>Architect - Contact Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="project.html" class="w3-bar-item w3-button">Activities</a>
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <span class="w3-bar-item w3-button1">Contact</span>
+       <a href="admin.php" class="w3-bar-item w3-button">ADMIN</a>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="insertdb.php" method="post" onSubmit="myfunction()">
+      <input class="w3-input w3-border" type="text" placeholder="Please drop your Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="email" placeholder="Please drop your Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Please drop your Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Please drop your Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> ENTER 
+      </button>
+      <button class="w3-button w3-black w3-section" type="reset">
+        <i class="fa fa-paper-plane"></i> CLEAR
+      </button>
+    </form>
+    
+    <script>
+function myfunction() {
+  alert("The form was submitted");
+  }
+</script>
+  
+  </div>
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="images/KB-22.jpeg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
